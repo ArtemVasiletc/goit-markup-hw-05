@@ -483,6 +483,7 @@ header {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 350ms linear, visibility 350ms linear;
 }
 
 .modal {
@@ -496,6 +497,12 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 450ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .close-modal {

@@ -519,6 +519,15 @@ header {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--base-anim);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background-color: var(--ocean);
+  fill: var(--white);
 }
 
 /* ----------------------------------------MAIN-PORTFOLIO.HTML---------------------------------------- */
